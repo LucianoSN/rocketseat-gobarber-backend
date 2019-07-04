@@ -1,3 +1,4 @@
 import app from './app';
+import env from './config/env';
 
-app.listen(3333, () => console.log(`Started ...`));
+app.listen(env.port, () => console.log(`Started ...`));

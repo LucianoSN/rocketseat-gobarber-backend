@@ -44,9 +44,8 @@ class UserController {
 			),
 		});
 
-		schema.validate(req.body).catch(function(err) {
+		schema.validate(req.body).catch(err => {
 			console.log(err.errors);
-			err.errors;
 		});
 
 		if (!(await schema.isValid(req.body))) {

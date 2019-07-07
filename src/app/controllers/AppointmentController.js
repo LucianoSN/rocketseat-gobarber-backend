@@ -91,6 +91,7 @@ class AppointmenteController {
 		});
 
 		/** Notify appointment provider */
+
 		const user = await User.findByPk(req.userId);
 
 		const formattedDate = format(

@@ -1,5 +1,7 @@
-const port = 3334;
-const url = `http://localhost:${port}`;
+import 'dotenv/config';
+
+const port = process.env.APP_PORT;
+const url = `${process.env.APP_URL}:${port}`;
 
 export default {
 	port,
